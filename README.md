@@ -12,6 +12,31 @@
 - 3주간 개념 정리 후 개강 전까지 문제풀이
 - 1일 1커밋 무실천 시 벌금 10000원
 
+### git 활용 법
+
+```shell
+// 1. repo 클론하기
+git clone https://github.com/GANGESHOTTEOK/yaman-algorithm.git
+
+// 2. 자신의 branch 생성 및 이동
+git checkout -b 이름
+
+// 3. 코드 및 md 작성
+// 4. 스테이징
+git add --all
+
+// 5. 커밋
+git commit -m "코드 작성"
+
+// 6. 온라인 repo에 push
+git push origin 자기브런치
+
+// 7. 깃허브 repo 페이지에서 pull request 하기 (매번 할 필요는 없음)
+
+- 왠만하면 충돌나지 않도록 master에 직접 푸쉬하지는 말도록 합시다
+```
+
+
 ---
 
 ### 팀원
