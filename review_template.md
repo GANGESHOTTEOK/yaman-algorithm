@@ -1,5 +1,5 @@
 
-## [巩力力格](https://www.acmicpc.net/problem/)
+## [巩力力格](https://www.acmicpc.net/problem/巩力锅龋)
 ---
 
 ### 巩力 汲疙
