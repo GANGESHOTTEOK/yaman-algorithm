@@ -1,15 +1,3 @@
-## [단지번호붙이기](https://www.acmicpc.net/problem/2667)
----
-
-### 문제 설명
-- 
----
-
-### 문제 접근
----
-
-### 문제 풀이
-``` Python
 import sys
  
 dir =[[0, 1],[1, 0],[-1, 0],[0, -1]]
@@ -40,10 +28,3 @@ scale.sort()
 print (len(scale)) 
 for k in scale:
     print(k) 
-```
----
-
-### 결과 및 한줄평
-
-[![image](https://user-images.githubusercontent.com/54929223/148060348-ec10409a-7cb7-4599-a761-1ec58019f557.png)](https://www.acmicpc.net/source/37062675)
----

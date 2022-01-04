@@ -1,15 +1,3 @@
-
-## [유기농 배추](https://www.acmicpc.net/problem/1012)
----
-
-### 문제 설명
----
-
-### 문제 접근
----
-
-### 문제 풀이
-``` Python
 import sys
 
 dir = [[0,1],[1,0],[-1,0],[0,-1]]
@@ -40,8 +28,3 @@ for t in range(T):
                             field[x][y] = 0
                             stack.append((x,y))
     print(cnt)
-```
----
-
-### 결과 및 한줄평
----
