@@ -3,7 +3,6 @@ import sys
 dir =[[0, 1],[1, 0],[-1, 0],[0, -1]]
 N = int (sys.stdin.readline ())
 houses =[list(sys.stdin.readline ()) for i in range (N)]
-cnt = 0
 scale =[]
  
 for r in range (N):
