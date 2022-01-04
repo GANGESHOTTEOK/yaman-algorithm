@@ -3,7 +3,6 @@ using namespace std;
 int N; string inp;
 
 void input(vector<vector<bool>> &map, int N) {
-    
     for(int i=0;i<N;i++){
         cin >> inp;
         for(int j=0;j<N;j++)
