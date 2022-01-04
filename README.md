@@ -38,13 +38,14 @@ git push origin 자기브런치
 ---
 부산대학교 정보컴퓨터공학과 안현주  
 부산대학교 정보컴퓨터공학과 정우영  
-부산대학교 정보컴퓨터공학과 홍유준  
+부산대학교 정보컴퓨터공학과 홍유준
+부산대학교 정보컴퓨터공학과 송지혜  
 
 ### 벌금카운터
 ---
-|[AN](https://github.com/muzee99)|[HONG](https://github.com/kick-snare)|[JUNG](https://github.com/wyj3569)|
-|:-:|:-:|:-:|
-|0|0|0|
+|[AN](https://github.com/muzee99)|[HONG](https://github.com/kick-snare)|[JUNG](https://github.com/wyj3569)|[SONG](https://github.com/qwer15948)|
+|:-:|:-:|:-:|:-:|
+|0|0|0|0|
 
 
 치타는 달린다...
