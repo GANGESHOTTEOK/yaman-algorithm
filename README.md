@@ -2,7 +2,7 @@
 **H**ello 안녕하세요 😁
 안되면 될 때까지, 무지성 알고리즘 스터디 **야만 알고리즘**입니다.  
 
-![image](https://user-images.githubusercontent.com/46425142/147953096-5f8a262d-712d-46e7-a508-3561c3feda55.png)
+[![image](https://user-images.githubusercontent.com/46425142/147953096-5f8a262d-712d-46e7-a508-3561c3feda55.png)](https://youtu.be/WPdWvnAAurg?t=228)
 
 
 - 1일 1커밋을 원칙으로 함
