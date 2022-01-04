@@ -1,0 +1,5 @@
+
+## IGNORE FILE ##
+*.DS_Store
+*.cph
+*.vscode/
