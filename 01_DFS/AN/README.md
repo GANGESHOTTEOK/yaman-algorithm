@@ -30,7 +30,7 @@
 
 ## DFS의 구현
 - `recursive call`나 `stack`을 통해 구현할 수 있다.
-- `recursive call`을 이용한 DFS 구현(traversal)
+- `recursive call`을 이용한 DFS 구현
 ``` Python
 def dfs(graph, start, visited=set()):
     if start not in visited:            // 이전에 방문한 노드가 아닐 경우
@@ -45,21 +45,11 @@ def dfs(graph, start, visited=set()):
 def dfs(graph, start, visited=set()):
     stack = Stack()
     stack.push(start)
-
     while not stack.isEmpty():
-        here = stack.pop()
-        print(here, end='')
-        current = here
+        current = stack.pop()
+        visited.push(current)
         nbr = graph[current] - visited
         for v in nbr:
             stack.push(v)
-            
-        if(graph[current])
-    if start not in visited:
-        visited.add(start)
-        print(start, end='')
-        nbr = graph[start] - visited
-        for v in nbr:
-            dfs(graph, v, visited)
+            visited.push(v)
 ```
-##### * 구현 소스코드 미완.
