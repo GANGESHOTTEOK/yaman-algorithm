@@ -1,7 +1,7 @@
 
 ## Binary Search
 
-|#|¹øÈ£|Á¦¸ñ|
+|#|ë²ˆí˜¸|ì œëª©|
 |:-:|:-:|:-|
-|1|[10815](https://www.acmicpc.net/problem/10815)|¼ıÀÚ Ä«µå|
-|2|[2512](https://www.acmicpc.net/problem/2512)|¿¹»ê|
+|1|[10815](https://www.acmicpc.net/problem/10815)|ìˆ«ì ì¹´ë“œ|
+|2|[2512](https://www.acmicpc.net/problem/2512)|ì˜ˆì‚°|

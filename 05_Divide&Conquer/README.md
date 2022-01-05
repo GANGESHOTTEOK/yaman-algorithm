@@ -1,7 +1,7 @@
 
 ## Divide & Conquer
 
-|#|¹øÈ£|Á¦¸ñ|
+|#|ë²ˆí˜¸|ì œëª©|
 |:-:|:-:|:-|
-|1|[2447](https://www.acmicpc.net/problem/2447)|º° Âï±â - 10|
+|1|[2447](https://www.acmicpc.net/problem/2447)|ë³„ ì°ê¸° - 10|
 |2|[1074](https://www.acmicpc.net/problem/1074)|Z|
