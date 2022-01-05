@@ -1,7 +1,7 @@
 
 ## BFS
 
-|#|¹øÈ£|Á¦¸ñ|
+|#|ë²ˆí˜¸|ì œëª©|
 |:-:|:-:|:-|
-|1|[1697](https://www.acmicpc.net/problem/1697)|¼û¹Ù²ÀÁú|
-|2|[2606](https://www.acmicpc.net/problem/2606)|¹ÙÀÌ·¯½º|
+|1|[1697](https://www.acmicpc.net/problem/1697)|ìˆ¨ë°”ê¼­ì§ˆ|
+|2|[2606](https://www.acmicpc.net/problem/2606)|ë°”ì´ëŸ¬ìŠ¤|
