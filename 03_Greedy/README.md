@@ -1,7 +1,7 @@
 
 ## Greedy
 
-|#|╧Ьхё|а╕╦Я|
+|#|К╡┬М≤╦|Л═°К╙╘|
 |:-:|:-:|:-|
-|1|[2217](https://www.acmicpc.net/problem/2217)|╥нга|
-|2|[1946](https://www.acmicpc.net/problem/1946)|╫еют ╩Г©Ь|
+|1|[2217](https://www.acmicpc.net/problem/2217)|К║°М■└|
+|2|[1946](https://www.acmicpc.net/problem/1946)|Л▀═Л·┘ Л┌╛Л⌡░|
