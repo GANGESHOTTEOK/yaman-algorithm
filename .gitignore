@@ -3,5 +3,6 @@
 *.DS_Store
 *.cph
 *.vscode/
+*.txt
 *.o
 *.bin
