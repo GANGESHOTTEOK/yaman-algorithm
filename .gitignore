@@ -4,3 +4,5 @@
 *.cph
 *.vscode/
 *.txt
+*.o
+*.bin

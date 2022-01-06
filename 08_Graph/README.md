@@ -1,7 +1,7 @@
 
 ## Graph
 
-|#|¹øÈ£|Á¦¸ñ|
+|#|ë²ˆí˜¸|ì œëª©|
 |:-:|:-:|:-|
-<!-- |1|[2667](https://www.acmicpc.net/problem/2667)|´ÜÁö¹øÈ£ºÙÀÌ±â|
-|2|[1012](https://www.acmicpc.net/problem/1012)|À¯±â³ó ¹èÃß| -->
+<!-- |1|[2667](https://www.acmicpc.net/problem/2667)|ë‹¨ì§€ë²ˆí˜¸ë¶™ì´ê¸°|
+|2|[1012](https://www.acmicpc.net/problem/1012)|ìœ ê¸°ë† ë°°ì¶”| -->
