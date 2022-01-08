@@ -14,3 +14,34 @@
 - 위 과정을 `left <= right` 를 만족하는 동안 반복한다.
 
 ![Binary Search의 과정](https://t1.daumcdn.net/cfile/tistory/221D4A3F5705041A1F "Binary Search의 과정")
+
+## 구현 코드
+- 반복문
+``` Python
+def BinarySearch(list, target):
+    list.sort()
+    left, right, isExist = 0, len(list)-1, 0
+    while left <= right:
+        mid = (left+right)//2
+        if mid == target:
+            isExist = 1
+        elif mid <= target:
+            left = mid+1
+        else:
+            right = mid-1
+    return isExist
+``` 
+
+- 재귀
+```Python
+def BinarySearch(list, left, right, target):
+    if left > right:
+        return 0
+    mid = (left+right)//2
+    if mid == target:
+        return 1
+    elif mid <= target:
+        BinarySearch(list, mid+1, right, target)
+    else:
+        BinarySearch(list, left, mid-1, target)
+```
