@@ -4,6 +4,7 @@
 
 ### 문제 설명
 - $2^N X 2^N$인 2차원 배열을 Z모양으로 탐색
+
 ![문제예시](https://upload.acmicpc.net/adc7cfae-e84d-4d5c-af8e-ee011f8fff8f/-/preview/)
 
 #### 입력
