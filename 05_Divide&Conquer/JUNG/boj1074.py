@@ -1,26 +1,26 @@
 N, r, c = map(int, input().split())
 
-result = 0
-def func(x, y, len):
-    global result
+count = 0
+def get_order(x, y, size):
+    global count
 
     if x == r and y == c:
-        print(result)
+        print(count)
         exit(0)
 
-    if len == 1:
-        result += 1
+    if size == 1:
+        count += 1
         return
 
-    if not (x <= r < x + len and y <= c < y + len):
-        result += (len ** 2)
+    if not (x <= r < x + size and y <= c < y + size):
+        count += size ** 2
         return
 
-    size = len // 2
-    func(x     , y     , size)
-    func(x     , y+size, size)
-    func(x+size, y     , size)
-    func(x+size, y+size, size)
+    N = size // 2
+    get_order(x  , y  , N)
+    get_order(x  , y+N, N)
+    get_order(x+N, y  , N)
+    get_order(x+N, y+N, N)
 
 
-func(0, 0, 2**N)
+get_order(0, 0, 2**N)

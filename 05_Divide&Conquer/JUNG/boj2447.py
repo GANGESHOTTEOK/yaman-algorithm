@@ -1,22 +1,28 @@
 N = int(input())
-array = [["*" for _ in range(N)] for _ in range(N)]
+stars = [[0 for _ in range(N)] for _ in range(N)]
 
-def print_star(array, x, y, n):
-    if n == 3:
-        array[x + 1][y + 1] = " "
-    else:
-        temp = n // 3
-        for i in range(x + temp, x + 2 * temp):
-            for j in range(y + temp, y + 2 * temp):
-                array[i][j] = " "
-        for i in range(0, n, temp):
-            for j in range(0, n, temp):
-                print_star(array, x + i, y + j, temp)
+def draw_stars(stars, x, y, N):
+    if N == 3:
+        for i in range(x, x+N):
+            for j in range(y, y+N):
+                if i % 3 == 1 and j % 3 == 1:
+                    stars[i][j] = 0
+                else:
+                    stars[i][j] = 1
+        return
+
+    size = N // 3
+    for i in range(3):
+        for j in range(3):
+            if i % 3 == 1 and j % 3 == 1:
+                continue
+            else:
+                draw_stars(stars, x + size * i, y + size * j, size)
 
 
-
-print_star(array, 0, 0, N)
-for i in range(0, N):
-    for j in range(0, N):
-        print(array[i][j], end="")
+draw_stars(stars, 0, 0, N)
+for i in range(N):
+    for j in range(N):
+        print(' ' if stars[i][j] == 0 else '*', end="")
     print()
+
