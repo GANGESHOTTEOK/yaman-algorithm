@@ -7,7 +7,6 @@ int main() {
     multiset<int> nums;
     int rope = N;
     while(N-- && cin >> num) nums.insert(num);
-    for(auto &num : nums) 
-        maxWeight = max(maxWeight, num * rope--);
+    for(auto &num : nums) maxWeight = max(maxWeight, num * rope--);
     cout << maxWeight;
 }
