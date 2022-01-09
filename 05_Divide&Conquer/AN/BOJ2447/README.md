@@ -74,7 +74,7 @@ def getStar(n):
 n=int(sys.stdin.readline().strip())
 print('\n'.join(getStar(n)))
 ```
-[![image](https://user-images.githubusercontent.com/54929223/148641595-7ffe4b60-f532-46a2-a7b8-a84291f75f58.png)](https://www.acmicpc.net/source/37258165)
+[![image](https://user-images.githubusercontent.com/54929223/148686508-2ed47b97-1fe1-4c8b-97e4-8d5dde74724c.png)](https://www.acmicpc.net/source/37258165)
 
 
 ---
