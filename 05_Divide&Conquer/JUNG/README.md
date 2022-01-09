@@ -69,7 +69,151 @@ print(merge_sort(array))
 ![image](https://user-images.githubusercontent.com/49744558/148672662-8aefe97b-c3a6-4fd9-89a4-06bf522173c3.png)
 위의 그림을 보면 알 수 있듯이, 7번째 피보나치 수열은 6번째 피보나치 수열과 5번째 피보나치 수열을 알아야 한다. 또한 6번째 피보나치 수열은 5번째 피보나치 수열과 4번째 피보나치 수열을 알아야하며, 5번째 피보나치 수열은 4번째 피보나치 수열과 3번째 피보나치 수열을 알아야 한다. 즉 7번째 피보나치 수열을 구하는 문제는 하위 문제인 6번째 피보나치 수열을 구하는 문제와 5번째 피보나치 수열을 구하는 문제로 분할할 수 있다. 즉, 최적 부분 구조이다. 또한 자세히 보면 각각의 부분 문제들이 서로 중복되는 사실을 알 수 있다. 즉 중복된 하위 문제들로 이루어져 있으므로 이미 해결한 결과를 저장해 두었다가 중복된 하위 문제가 등장하면 저장한 결과를 꺼내서 사용하는 방식인 다이나믹 프로그래밍 기법을 사용할 수 있다.
 
-아래는 다익스트라 알고리즘 
+
+## [별 찍기 - 10](https://www.acmicpc.net/problem/2447)
+---
+
+### 문제 설명
+재귀적인 패턴으로 별을 찍는 문제이다.  
+어떤 정수 k에 대해 N=3^k이고 1 ≤ k < 8이다.  
+
+---
+
+### 문제 접근
+
+N = 3 일때 다음과 같다.  
+
+![image](https://user-images.githubusercontent.com/49744558/148676241-2266de7d-8201-4104-87f3-03fdc7758d08.png)
+
+N = 3^i 일 때, N = 3^(i-1)의 패턴이 반복적으로 그려지는 패턴이다.  
+
+![image](https://user-images.githubusercontent.com/49744558/148676261-304572d2-ff1c-443f-a094-7e46376c12dc.png)
+
+---
+
+### 문제 풀이
+전체 소스 코드이다.  
+
+```
+N = int(input())
+# N x N 이중 리스트를 선언한다.
+# 0은 공백, 1은 별로 취급한다.
+stars = [[0 for _ in range(N)] for _ in range(N)]
+
+def draw_stars(stars, x, y, N):
+    # N = 3이면 1과 0을 기록한다.
+    if N == 3:
+        for i in range(x, x+N):
+            for j in range(y, y+N):
+                # 정중앙은 공백이다.
+                if i % 3 == 1 and j % 3 == 1:
+                    stars[i][j] = 0
+                # 그 외에는 별이다.
+                else:
+                    stars[i][j] = 1
+        return
+    
+    # 전체 이중 리스트를 9등분 한다.
+    size = N // 3
+    for i in range(3):
+        for j in range(3):
+            # 9등분된 리스트 중에서 정중앙은 아무것도 안한다.
+            # 즉 0 (공백)을 유지한다.
+            if i % 3 == 1 and j % 3 == 1:
+                continue
+            # 그 외에는 재귀적으로 0과 1을 찍어준다.
+            else:
+                draw_stars(stars, x + size * i, y + size * j, size)
+
+
+draw_stars(stars, 0, 0, N)
+for i in range(N):
+    for j in range(N):
+        # 0이면 공백을 출력하고, 1이면 별을 출력한다.
+        print(' ' if stars[i][j] == 0 else '*', end="")
+    print()
+```
+
+---
+
+### 결과 및 한줄평
+결과는 성공적이다.  
+ 
+---
+
+
+## [Z](https://www.acmicpc.net/problem/1074)
+---
+
+### 문제 설명
+한수는 크기가 2N × 2N인 2차원 배열을 Z모양으로 탐색하려고 한다. 예를 들어, 2×2배열을 왼쪽 위칸, 오른쪽 위칸, 왼쪽 아래칸, 오른쪽 아래칸 순서대로 방문하면 Z모양이다.
+
+![image](https://user-images.githubusercontent.com/49744558/148676691-d5ab9678-4aad-41a8-a659-d7c19f0125f9.png)
+
+N > 1인 경우, 배열을 크기가 2N-1 × 2N-1로 4등분 한 후에 재귀적으로 순서대로 방문한다.
+
+다음 예는 22 × 22 크기의 배열을 방문한 순서이다.
+
+![image](https://user-images.githubusercontent.com/49744558/148676696-2a2e0f99-e77f-4211-9da9-fed4b7780117.png)
+
+아~ 전형적인 분할 정복 문제이구나!
+
+---
+
+### 문제 접근
+근데 조건 보면 N <= 15니까 2^15 = 3만 정도 되니까 이중 리스트 잡아서 풀면 안되겠다 생각했다.  
+그래서 리스트 선언 안하고 count로 지금 내가 있는 곳이 몇 번째 칸인지 일일이 세서 (r,c)가 나오면 출력해주기로 했다.  
+근데 그렇게 하니까 시간초과가 떠서 당황했다.  
+해결 방법은 아래 소스코드에서 설명해준다.  
+
+---
+
+### 문제 풀이
+전체 소스 코드이다.
+```
+N, r, c = map(int, input().split())
+
+# 몇 번째 칸인지 세는 count이다.
+count = 0
+
+def get_order(x, y, size):
+    global count
+    
+    # 해당 좌표 (x,y)가 찾고자 하는 좌표 (r,c)이면 count출력하고 프로그램 종료.
+    if x == r and y == c:
+        print(count)
+        exit(0)
+    
+    # 재귀함수 종료 조건이다.
+    # size가 1이면 한 칸이다. 그래서 count를 1 증가시켜준다.
+    if size == 1:
+        count += 1
+        return
+    
+    # 이거 없으면 시간초과 뜨더라.
+    # 일일이 재귀함수 호출하지 말고 내가 호출하고자 하는 함수가 확인하는 좌표안에 (r,c)가 없으면
+    # 그냥 해당 영역 칸 개수만큼 count 증가시켜주고
+    # 그냥 다음 함수 부르자! 이 아이디어다
+    if not (x <= r < x + size and y <= c < y + size):
+        count += size ** 2
+        return
+    
+    # 재귀적으로 영역 분할 하는 부분이다.
+    # 계속 영역을 4개로 쪼개준다.
+    N = size // 2
+    get_order(x  , y  , N)
+    get_order(x  , y+N, N)
+    get_order(x+N, y  , N)
+    get_order(x+N, y+N, N)
+
+
+get_order(0, 0, 2 ** N)
+```
+---
+
+### 결과 및 한줄평
+결과는 성공적이다.
+---
 
 
 
