@@ -1,34 +1,29 @@
 import sys
 
-lotto = []
-tc = []
-visited = set()
-def combination(depth):
-    if depth == 6:
-        print(*tc)
-        # print()
+N = int(sys.stdin.readline().rstrip())
+origin = list(map(int, sys.stdin.readline().rstrip().split()))
+
+array = []
+highest = 0
+visited = [0 for _ in range(N)]
+
+def maxDiff(depth, result):
+    if(depth==N):
+        global highest 
+        highest = max(highest, result)
         return
-    k = lotto[-1]+1 if lotto else 0
-    for x in range(k, len(tc)):
-        print(x)
-        if tc[x] in visited:
-            continue
-        visited.add(tc[x])
-        lotto.append(tc[x])
-        combination(depth+1)
-        lotto.pop()
-        visited.remove(tc[x])
+    for i in range(N):
+        if not  visited[i]:
+            visited[i] = 1
+            array.append(origin[i])
+            diff = 0
+            if len(array)>=2:
+                diff += abs(array[-1] - array[-2])
+            result += diff 
+            maxDiff(depth+1, result)
+            result -= diff
+            array.pop()
+            visited[i] = 0
 
-while 1:
-    tc = list(map(int,sys.stdin.readline().split()))
-    if not tc[0]:
-        break
-    tc.pop(0)
-    combination(0)
-    
-# 7 1 2 3 4 5 6 7
-# 8 1 2 3 5 8 13 21 34
-# 0
-
-# 7 1 2 3 4 5 6 7
-# 0
+maxDiff(0, 0)
+print(highest)
