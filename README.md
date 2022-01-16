@@ -6,7 +6,7 @@
 
 
 - 1일 1커밋을 원칙으로 함
-- 매주 일요일 20시 Zoom
+- 매주 일요일 22시 Zoom
 - 3주간 개념 정리 후 개강 전까지 문제풀이
 - 1일 1커밋 무실천 시 벌금 10000원
 
@@ -41,6 +41,16 @@
 | DP       | 퇴사           | 실3  | https://www.acmicpc.net/problem/14501 |
 | DP       | 오르막 수      | 실1  | https://www.acmicpc.net/problem/11057 |
 | DP       | 타일 채우기    | 골5  | https://www.acmicpc.net/problem/2133  |
+| 다익스트라     | 최소비용 구하기  | 골5  | https://www.acmicpc.net/problem/1916  |
+| 다익스트라     | 최단경로         | 골5  | https://www.acmicpc.net/problem/1753  |
+| 벨만포드       | 타임머신         | 골4  | https://www.acmicpc.net/problem/11657 |
+| 벨만포드       | 웜홀             | 골3  | https://www.acmicpc.net/problem/1865  |
+| 플로이드와샬   | 경로찾기         | 실1  | https://www.acmicpc.net/problem/11403 |
+| 플로이드와샬   | 플로이드         | 골4  | https://www.acmicpc.net/problem/11404 |
+| 최소스패닝트리 | 최소 스패닝 트리 | 골4  | https://www.acmicpc.net/problem/1197  |
+| 최소스패닝트리 | 네트워크 연결    | 골4  | https://www.acmicpc.net/problem/1922  |
+| 투포인터       | 수들의 합 2      | 실3  | https://www.acmicpc.net/problem/2003  |
+| 투포인터       | 부분합           | 골4  | https://www.acmicpc.net/problem/1806  |
 
 ### git 활용법
 
