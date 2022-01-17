@@ -1,5 +1,5 @@
 
-## Backtracking
+## Dijkstra
 
 |#|번호|제목|
 |:-:|:-:|:-|
