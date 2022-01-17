@@ -26,5 +26,4 @@ for _ in range(tc):
         graph[s].append((-t,e))
     
     result = bellmanFord()
-
     print("NO" if result else "YES")
