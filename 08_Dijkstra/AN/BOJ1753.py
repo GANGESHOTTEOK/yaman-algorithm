@@ -29,4 +29,5 @@ while queue:
             distance[newDest] = dist
             heapq.heappush(queue, [dist, newDest])
   
-print("INF" if distance[i] == INF else distance[i])
+for i in range(1,V+1):
+    print("INF" if distance[i] == INF else distance[i])
