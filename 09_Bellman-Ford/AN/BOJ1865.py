@@ -1,16 +1,14 @@
 import sys
 
 input = sys.stdin.readline
-INF = 2000000000
+INF = sys.maxsize
+# float('inf')는 음수를 더해도 갱신되지 않음
 
-def bellman(V, E, costs):
+def bellman(V, costs):
     dist = [INF] * (V+1)
     dist[1] = 0
     for i in range(V):
-        for j in range(E):
-            cur = costs[j][0]
-            dest = costs[j][1]
-            cost = costs[j][2]
+        for cur, dest, cost in costs:
             if dist[dest] > dist[cur] + cost:
                 dist[dest] = dist[cur] + cost
                 if i == V-1:
