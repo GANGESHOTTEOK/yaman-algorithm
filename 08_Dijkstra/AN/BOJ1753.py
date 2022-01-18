@@ -30,7 +30,4 @@ while queue:
             heapq.heappush(queue, [dist, newDest])
   
 for i in range(1,V+1):
-    if distance[i] == INF:
-        print("INF")
-    else:
-        print(distance[i])
+    print("INF" if distance[i] == INF else distance[i])
