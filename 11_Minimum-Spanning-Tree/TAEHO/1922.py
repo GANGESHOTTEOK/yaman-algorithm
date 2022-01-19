@@ -27,8 +27,6 @@ graph = sorted(graph,key=lambda x:x[2])
 for s,e,w in graph:
     if find_parent(parent,s) == find_parent(parent,e):
         continue
-
-    print(s,e,w)
     answer += w
     union_parent(parent,s,e)
 
