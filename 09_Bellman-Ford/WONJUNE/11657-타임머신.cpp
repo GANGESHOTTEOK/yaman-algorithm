@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 #include <memory.h>
-#define INF 600000000LL
+#define INF 900'000'000LL
 
 using namespace std;
 
