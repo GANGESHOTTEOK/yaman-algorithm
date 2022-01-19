@@ -29,10 +29,7 @@ def Floyd():
 
     for i in range(n):
         for j in range(n):
-            if graph[i][j] == INF:
-                print(0,end=" ")
-            else:
-                print(graph[i][j],end=" ")
+            print(0 if graph[i][j] == INF else graph[i][j],end=" ")
         print()
 
 #------------------Dijacstra-------------------#
