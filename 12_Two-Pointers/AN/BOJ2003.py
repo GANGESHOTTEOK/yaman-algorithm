@@ -4,21 +4,19 @@ input = sys.stdin.readline
 
 N,M = map(int, input().split())
 A = list(map(int, input().split()))
-A.append(0)
-start = end = partial = count = 0
 
-while end <= N:
-    print(start, end, partial)
-    if partial >= M:
-        print("increase start")
-        partial -= A[start]
+start = end = part_sum = count = 0
+
+while True:
+    if part_sum >= M:
+        part_sum -= A[start]
         start += 1
+    elif end==N:
+        break
     else:
-        print("increase end")
-        partial += A[end]
+        part_sum += A[end]
         end += 1
-    if partial == M:
-        print("increase count")
+    if part_sum == M:
         count += 1
     
 print(count)
