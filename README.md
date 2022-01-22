@@ -51,6 +51,19 @@
 | 최소스패닝트리 | 네트워크 연결    | 골4  | https://www.acmicpc.net/problem/1922  |
 | 투포인터       | 수들의 합 2      | 실3  | https://www.acmicpc.net/problem/2003  |
 | 투포인터       | 부분합           | 골4  | https://www.acmicpc.net/problem/1806  |
+| kmp            | Cubeditor       | 골2  | https://www.acmicpc.net/problem/1701  |
+| kmp            | 부분 문자열     | 골3  | acmicpc.net/problem/16916             |
+| 계산기하       | CCW             | 골5  | https://www.acmicpc.net/problem/11758 |
+| 계산기하       | 다각형의 면적   | 골5  | https://www.acmicpc.net/problem/2166  |
+| 구간트리       | 구간 합 구하기  | 골1  | https://www.acmicpc.net/problem/2042  |
+| 구간트리       | 최솟값과 최댓값 | 골1  | https://www.acmicpc.net/problem/2357  |
+| 비트마스킹     | 가르침          | 골4  | https://www.acmicpc.net/problem/1062  |
+| 비트마스킹     | 외판원 순회     | 골1  | https://www.acmicpc.net/problem/2098  |
+| 슬라이딩윈도우 | 내려가기        | 골4  | https://www.acmicpc.net/problem/2096  |
+| 슬라이딩윈도우 | 회전 초밥       | 골4  | https://www.acmicpc.net/problem/15961 |
+| 위상정렬       | 줄 세우기       | 골3  | https://www.acmicpc.net/problem/2252  |
+| 위상정렬       | ACM Craft       | 골3  | https://www.acmicpc.net/problem/1005  |
+| 위상정렬       | ACM Craft       | 골3  | https://www.acmicpc.net/problem/1005  |
 
 ### git 활용법
 
