@@ -99,12 +99,13 @@ git push origin 자기브런치
 부산대학교 정보컴퓨터공학과 정우영   
 부산대학교 정보컴퓨터공학과 송지혜   
 부산대학교 정보컴퓨터공학과 김태호  
+부산대학교 정보컴퓨터공학과 최원준
 
 ### 벌금카운터
 ---
-|[AN](https://github.com/muzee99)|[HONG](https://github.com/kick-snare)|[JUNG](https://github.com/wyj3569)|[SONG](https://github.com/qwer15948)|[KIM](https://github.com/Train0303)|
-|:-:|:-:|:-:|:-:|:-:|
-|0|0|0|0|0|
+|[AN](https://github.com/muzee99)|[HONG](https://github.com/kick-snare)|[JUNG](https://github.com/wyj3569)|[SONG](https://github.com/qwer15948)|[KIM](https://github.com/Train0303)|[CHOI](http://github.com/asd147asd147)|
+|:-:|:-:|:-:|:-:|:-:|:-:|
+|0|0|0|0|0|0|
 
 
 치타는 달린다...
