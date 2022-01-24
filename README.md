@@ -6,9 +6,51 @@
 
 
 - 1일 1커밋을 원칙으로 함
-- 매주 일요일 20시 Zoom
+- 매주 일요일 22시 Zoom
 - 3주간 개념 정리 후 개강 전까지 문제풀이
 - 1일 1커밋 무실천 시 벌금 10000원
+
+### 지정문제
+| 주제     | problem        | tier | link                                  |
+|----------|----------------|------|---------------------------------------|
+| DFS      | 단지번호붙이기 | 실1  | https://www.acmicpc.net/problem/2667  |
+| DFS      | 유기농 배추    | 실2  | https://www.acmicpc.net/problem/1012  |
+| BFS      | 숨바꼭질       | 실1  | https://www.acmicpc.net/problem/1697  |
+| BFS      | 바이러스       | 실3  | https://www.acmicpc.net/problem/2606  |
+| 그리디   | 로프           | 실4  | https://www.acmicpc.net/problem/2217  |
+| 그리디   | 신입사원       | 실1  | https://www.acmicpc.net/problem/1946  |
+| 이분탐색 | 숫자 카드      | 실4  | https://www.acmicpc.net/problem/10815 |
+| 이분탐색 | 예산           | 실3  | https://www.acmicpc.net/problem/2512  |
+| 분할정복 | 별 찍기 - 10   | 실1  | https://www.acmicpc.net/problem/2447  |
+| 분할정복 | Z              | 실1  | https://www.acmicpc.net/problem/1074  |
+| 백트래킹 | 로또           | 실2  | https://www.acmicpc.net/problem/6603  |
+| 백트래킹 | 차이를 최대로  | 실2  | https://www.acmicpc.net/problem/10819 |
+| 백트래킹 | 암호 만들기    | 골5  | https://www.acmicpc.net/problem/1759  |
+| 백트래킹 | 모든 순열      | 실3  | https://www.acmicpc.net/problem/10974 |
+| 백트래킹 | 부등호         | 실2  | https://www.acmicpc.net/problem/2529  |
+| 백트래킹 | 알파벳         | 골4  | https://www.acmicpc.net/problem/1987  |
+| DP       | 다리 놓기      | 실5  | https://www.acmicpc.net/problem/1010  |
+| DP       | 1, 2, 3 더하기 | 실3  | https://www.acmicpc.net/problem/9095  |
+| DP       | 평범한 배낭    | 골5  | https://www.acmicpc.net/problem/12865 |
+| DP       | 2xn 타일링     | 실3  | https://www.acmicpc.net/problem/11726 |
+| DP       | 이친수         | 실3  | https://www.acmicpc.net/problem/2193  |
+| DP       | LCS            | 골5  | https://www.acmicpc.net/problem/9251  |
+| DP       | 2xn 타일링 2   | 실3  | https://www.acmicpc.net/problem/11727 |
+| DP       | 카드 구매하기  | 실1  | https://www.acmicpc.net/problem/11052 |
+| DP       | 동전 1         | 골5  | https://www.acmicpc.net/problem/2293  |
+| DP       | 퇴사           | 실3  | https://www.acmicpc.net/problem/14501 |
+| DP       | 오르막 수      | 실1  | https://www.acmicpc.net/problem/11057 |
+| DP       | 타일 채우기    | 골5  | https://www.acmicpc.net/problem/2133  |
+| 다익스트라     | 최소비용 구하기  | 골5  | https://www.acmicpc.net/problem/1916  |
+| 다익스트라     | 최단경로         | 골5  | https://www.acmicpc.net/problem/1753  |
+| 벨만포드       | 타임머신         | 골4  | https://www.acmicpc.net/problem/11657 |
+| 벨만포드       | 웜홀             | 골3  | https://www.acmicpc.net/problem/1865  |
+| 플로이드와샬   | 경로찾기         | 실1  | https://www.acmicpc.net/problem/11403 |
+| 플로이드와샬   | 플로이드         | 골4  | https://www.acmicpc.net/problem/11404 |
+| 최소스패닝트리 | 최소 스패닝 트리 | 골4  | https://www.acmicpc.net/problem/1197  |
+| 최소스패닝트리 | 네트워크 연결    | 골4  | https://www.acmicpc.net/problem/1922  |
+| 투포인터       | 수들의 합 2      | 실3  | https://www.acmicpc.net/problem/2003  |
+| 투포인터       | 부분합           | 골4  | https://www.acmicpc.net/problem/1806  |
 
 ### git 활용법
 
@@ -36,16 +78,17 @@ git push origin 자기브런치
 
 ### 팀원
 ---
-부산대학교 정보컴퓨터공학과 안현주  
-부산대학교 정보컴퓨터공학과 정우영  
-부산대학교 정보컴퓨터공학과 홍유준  
-부산대학교 정보컴퓨터공학과 송지혜  
+부산대학교 정보컴퓨터공학과 홍유준   
+부산대학교 정보컴퓨터공학과 안현주   
+부산대학교 정보컴퓨터공학과 정우영   
+부산대학교 정보컴퓨터공학과 송지혜   
+부산대학교 정보컴퓨터공학과 김태호  
 
 ### 벌금카운터
 ---
-|[AN](https://github.com/muzee99)|[HONG](https://github.com/kick-snare)|[JUNG](https://github.com/wyj3569)|[SONG](https://github.com/qwer15948)|
-|:-:|:-:|:-:|:-:|
-|0|0|0|0|
+|[AN](https://github.com/muzee99)|[HONG](https://github.com/kick-snare)|[JUNG](https://github.com/wyj3569)|[SONG](https://github.com/qwer15948)|[KIM](https://github.com/Train0303)|
+|:-:|:-:|:-:|:-:|:-:|
+|0|0|0|0|0|
 
 
 치타는 달린다...
