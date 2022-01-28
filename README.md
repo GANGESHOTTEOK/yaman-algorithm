@@ -11,9 +11,6 @@
 - 1일 1커밋 무실천 시 벌금 10000원
 
 ### 지정문제
-↧ Expand ↧
- GeneratePut tabs between columnsCompact modeLine breaks as <br>
-Result (click "Generate" to refresh) Copy to clipboard  Preview
 | #  |        주제    | problem            | tier | link                                  |
 |----|----------------|--------------------|------|---------------------------------------|
 | 1  | DFS            | 단지번호붙이기     | 실1  | https://www.acmicpc.net/problem/2667  |
