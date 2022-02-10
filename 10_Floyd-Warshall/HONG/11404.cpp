@@ -13,10 +13,10 @@ int main() {
     for(int i=1;i<=n;i++) dist[i][i] = 0;
 
     for(int i=1;i<=n;i++) 
-        for(int j=1;j<=n;j++) 
-            for(int k=1;k<=n;k++) 
-                if(dist[j][i]==INT_MAX || dist[i][k]==INT_MAX) continue;
-                else dist[j][k] = min(dist[j][k], dist[j][i] + dist[i][k]);
+    for(int j=1;j<=n;j++) 
+    for(int k=1;k<=n;k++) 
+        if(dist[j][i]==INT_MAX || dist[i][k]==INT_MAX) continue;
+        else dist[j][k] = min(dist[j][k], dist[j][i] + dist[i][k]);
 
     for(int i=1;i<=n;i++) {
         for(int j=1;j<=n;j++) 

@@ -11,9 +11,6 @@
 - 1일 1커밋 무실천 시 벌금 10000원
 
 ### 지정문제
-↧ Expand ↧
- GeneratePut tabs between columnsCompact modeLine breaks as <br>
-Result (click "Generate" to refresh) Copy to clipboard  Preview
 | #  |        주제    | problem            | tier | link                                  |
 |----|----------------|--------------------|------|---------------------------------------|
 | 1  | DFS            | 단지번호붙이기     | 실1  | https://www.acmicpc.net/problem/2667  |
@@ -66,6 +63,12 @@ Result (click "Generate" to refresh) Copy to clipboard  Preview
 | 48 | 슬라이딩윈도우 | 회전   초밥        | 골4  | https://www.acmicpc.net/problem/15961 |
 | 49 | 위상정렬       | 줄   세우기        | 골3  | https://www.acmicpc.net/problem/2252  |
 | 50 | 위상정렬       | ACM   Craft        | 골3  | https://www.acmicpc.net/problem/1005  |
+| 51  | ?               | 튜플               | Lv2  | https://programmers.co.kr/learn/courses/30/lessons/64065 |
+| 52  | ?     | 불량 사용자        | Lv3  | https://programmers.co.kr/learn/courses/30/lessons/64064 |
+| 53  | ? | 징검다리 건너기    | Lv3  | https://programmers.co.kr/learn/courses/30/lessons/64062 |
+| 54  | ?     | 수식 최대화        | Lv2  | https://programmers.co.kr/learn/courses/30/lessons/67257 |
+| 55  | ?       | 보석 쇼핑          | Lv3  | https://programmers.co.kr/learn/courses/30/lessons/67258 |
+| 56  | ?     | 경주로 건설        | Lv3  | https://programmers.co.kr/learn/courses/30/lessons/67259 |
 
 
 ### git 활용법
