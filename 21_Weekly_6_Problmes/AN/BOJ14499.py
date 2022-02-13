@@ -15,13 +15,13 @@ for k in command:
         continue
     r,c = row,col
     if k == 1:
-        dice[0], dice[2], dice[5], dice[3] = dice[2], dice[5], dice[3], dice[0]
-    elif k == 2:
         dice[0], dice[2], dice[5], dice[3] = dice[3], dice[0], dice[2], dice[5]
+    elif k == 2:
+        dice[0], dice[2], dice[5], dice[3] = dice[2], dice[5], dice[3], dice[0]
     elif k == 3:
-        dice[0], dice[4], dice[5], dice[1] = dice[1], dice[0], dice[4], dice[5]
-    else:
         dice[0], dice[4], dice[5], dice[1] = dice[4], dice[5], dice[1], dice[0]
+    else:
+        dice[0], dice[4], dice[5], dice[1] = dice[1], dice[0], dice[4], dice[5]
     if board[r][c] == 0:
         board[r][c] = dice[5]
     else:
