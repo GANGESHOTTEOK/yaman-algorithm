@@ -19,13 +19,17 @@ def isRoad(i,c):
             return
     if cnt>=0:
         ans += 1
-        
+
+# input
 N,L = map(int,input().split())
 board = []
 for _ in range(N):
     board.append(list(map(int,input().split())))
+    
 ans=0
 for k in range(0,N):
     isRoad(k,1)
     isRoad(k,0)
+    
+# output
 print(ans)
