@@ -11,9 +11,6 @@
 - 1일 1커밋 무실천 시 벌금 10000원
 
 ### 지정문제
-↧ Expand ↧
- GeneratePut tabs between columnsCompact modeLine breaks as <br>
-Result (click "Generate" to refresh) Copy to clipboard  Preview
 | #  |        주제    | problem            | tier | link                                  |
 |----|----------------|--------------------|------|---------------------------------------|
 | 1  | DFS            | 단지번호붙이기     | 실1  | https://www.acmicpc.net/problem/2667  |
@@ -66,7 +63,24 @@ Result (click "Generate" to refresh) Copy to clipboard  Preview
 | 48 | 슬라이딩윈도우 | 회전   초밥        | 골4  | https://www.acmicpc.net/problem/15961 |
 | 49 | 위상정렬       | 줄   세우기        | 골3  | https://www.acmicpc.net/problem/2252  |
 | 50 | 위상정렬       | ACM   Craft        | 골3  | https://www.acmicpc.net/problem/1005  |
-
+| 51  | ?               | 튜플               | Lv2  | https://programmers.co.kr/learn/courses/30/lessons/64065 |
+| 52  | ?     | 불량 사용자        | Lv3  | https://programmers.co.kr/learn/courses/30/lessons/64064 |
+| 53  | ? | 징검다리 건너기    | Lv3  | https://programmers.co.kr/learn/courses/30/lessons/64062 |
+| 54  | ?     | 수식 최대화        | Lv2  | https://programmers.co.kr/learn/courses/30/lessons/67257 |
+| 55  | ?       | 보석 쇼핑          | Lv3  | https://programmers.co.kr/learn/courses/30/lessons/67258 |
+| 56  | ?     | 경주로 건설        | Lv3  | https://programmers.co.kr/learn/courses/30/lessons/67259 |
+| 57  | 비밀        | 주사위 굴리기 | 골4  | https://www.acmicpc.net/problem/14499 |
+| 58 | 비밀        | 로봇청소기    | 골5  | https://www.acmicpc.net/problem/14503 |
+| 59 | 비밀        | 경사로        | 골3  | https://www.acmicpc.net/problem/14890 |
+| 60 | 비밀        | 감시          | 골5  | https://www.acmicpc.net/problem/15683 |
+| 61 | 비밀        | 사다리 조작   | 골4  | https://www.acmicpc.net/problem/15684 |
+| 62 | 비밀        | 뱀            | 골5  | https://www.acmicpc.net/problem/3190  |
+|  63   | 비밀        | 괄호 추가하기 | 골3  | https://www.acmicpc.net/problem/16637 |
+|  64  | 비밀        | 캐슬 디펜스   | 골4  | https://www.acmicpc.net/problem/17135 |
+|  65  | 비밀        | 색종이 붙이기 | 골2  | https://www.acmicpc.net/problem/17136 |
+|  66  | 비밀        | ⚾             | 골4  | https://www.acmicpc.net/problem/17281 |
+|  67  | 비밀        | 배열 돌리기 4 | 골4  | https://www.acmicpc.net/problem/17406 |
+|  68  | 비밀        | 게리맨더링    | 골4  | https://www.acmicpc.net/problem/17471 |
 
 ### git 활용법
 
