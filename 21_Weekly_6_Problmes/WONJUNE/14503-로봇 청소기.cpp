@@ -1,3 +1,4 @@
+
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -25,8 +26,7 @@ void solve(){
             room[r][c] = 2;
             cnt++;
         }
-        d -= 1;
-        if(d < 0) d = 3;
+        d = (d+3)%4;
 
         if(room[r+dy[d]][c+dx[d]] == 0){
             r += dy[d];
@@ -58,4 +58,3 @@ int main(){
 
     return 0;
 }
-
