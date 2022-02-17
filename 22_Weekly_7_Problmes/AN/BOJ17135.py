@@ -31,13 +31,9 @@ def locateArcher(depth):
         return
     k = archers[-1]+1 if archers else 0
     for i in range(k,M):
-        if visited[i]:
-            continue
-        visited[i]=1
         archers.append(i)
         locateArcher(depth+1)
         archers.pop()
-        visited[i]=0
     return
     
 # input
@@ -48,7 +44,6 @@ for _ in range(N):
 enemies = [(i,j) for j in range(M) for i in range(N) if board[i][j]]
 
 archers=[]
-visited = [0]*M
 max_result = 0
 
 locateArcher(0)
