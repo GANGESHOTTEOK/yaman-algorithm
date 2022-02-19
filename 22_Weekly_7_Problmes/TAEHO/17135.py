@@ -16,14 +16,11 @@ def bfs(y,x,game_map):
         if min_length > length and length != 0 and game_map[y][x] == 1:
             min_y,min_x = y, x
             break
-        
         for i in range(3):
             new_y,new_x = y+dy[i], x+dx[i]
-            
             if 0<=new_y<start and 0<=new_x<m and length+1 <= d and game_map_visit[new_y][new_x] == 0:
                 q.append([new_y,new_x,length+1])
                 game_map_visit[new_y][new_x] = 1
-            
     return min_y,min_x
 
 def start(archer):
@@ -31,30 +28,24 @@ def start(archer):
     kill = 0
     shoot = set()
     standing = n
-    
     while standing != 0:
         enemy = False
         for i in range(standing):
             for j in range(m):
                 if temp[i][j] == 1:
                     enemy = True
-
         if not enemy:
             break
         else:
-            
             for ar in archer:
                 y,x = bfs(standing,ar,temp)
                 if y != 100 and x != 100:
                     shoot.add((y,x))
-            
             while shoot:
                 y,x = shoot.pop()
                 temp[y][x] = 0
                 kill += 1
-            
             standing -= 1
-            # print(temp)
     return kill
 
 def BT(cnt):
@@ -62,7 +53,6 @@ def BT(cnt):
     if cnt == 3:
         max_kill = max(max_kill,start(archer))
         return
-    
     for i in range(cnt,m):
         if cnt == 0 or archer[-1] < i:
             archer.append(i)
