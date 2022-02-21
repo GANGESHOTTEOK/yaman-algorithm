@@ -81,6 +81,12 @@
 |  66  | 비밀        | ⚾             | 골4  | https://www.acmicpc.net/problem/17281 |
 |  67  | 비밀        | 배열 돌리기 4 | 골4  | https://www.acmicpc.net/problem/17406 |
 |  68  | 비밀        | 게리맨더링    | 골4  | https://www.acmicpc.net/problem/17471 |
+| 69 | 비밀        | 뉴스 클러스터링 | Lv2  | https://programmers.co.kr/learn/courses/30/lessons/17677 |
+|  70  | 비밀        | 프렌즈4블록     | Lv2  | https://programmers.co.kr/learn/courses/30/lessons/17679 |
+|  71  | 비밀        | 캐시            | Lv2  | https://programmers.co.kr/learn/courses/30/lessons/17680 |
+|   72 | 비밀        | 압축            | Lv2  | https://programmers.co.kr/learn/courses/30/lessons/17684 |
+|    73| 비밀        | 파일명 정렬     | Lv2  | https://programmers.co.kr/learn/courses/30/lessons/17686 |
+|    74| 비밀        | n진수 게임      | Lv2  | https://programmers.co.kr/learn/courses/30/lessons/17687 |
 
 ### git 활용법
 
