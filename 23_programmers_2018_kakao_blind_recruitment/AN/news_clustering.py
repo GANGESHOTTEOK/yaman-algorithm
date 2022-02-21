@@ -16,8 +16,6 @@ def getSubSet(string):
     return subSet
 
 def solution(str1, str2):
-    str1,str2 = str1.upper(),str2.upper()
-    A = getSubSet(str1)
-    B = getSubSet(str2)
+    A,B = getSubSet(str1.upper()), getSubSet(str2.upper())
     answer = math.trunc(jacard(A,B)*65536)
     return answer
