@@ -1,40 +1,43 @@
-from queue import Queue
-
-def fillQueue(M, N, idx):
-    q = Queue()
-    for m in range(M):
-        if(b[M-1-m][idx] == 'X'): continue
-        q.put((M-1-m, idx))
-    return q
-    
-def check(q1, q2):
-	s = set()
-	if q1.qsize() == 0 or q2.qsize() == 0:
-		return s
-	block = [[q1.get(),q2.get()],['','']]
-    
-	while q1.qsize() and q2.qsize():
-		block[1][0], block[1][1] = block[0][0], block[0][1]
-		block[0][0], block[0][1] = q1.get(), q2.get()
-		if b[block[0][0][0]][block[0][0][1]] == b[block[0][1][0]][block[0][1][1]] == b[block[1][0][0]][block[1][0][1]] == b[block[1][1][0]][block[1][1][1]]:
-			s.add(block[0][0])
-			s.add(block[0][1])
-			s.add(block[1][0])
-			s.add(block[1][1])
-	return s
-    
 def solution(m, n, board):
-	answer = 0
-	global b
-	b = [list(x) for x in board]
-	while True:
-		s = set()
-		for j in range(n-1):
-			s = s | check(fillQueue(m,n,j), fillQueue(m,n,j+1))
-		if not bool(s):
-			break
-		answer += len(s)
-		for y,x in s:
-			b[y][x] = 'X'
+    answer = 0
+    b = [[0 for _ in range(m)] for _ in range(n)]
+    change = [True for _ in range(n)]
+    for i in range(m):
+        for j in range(n):
+            b[j][i] = board[m-1-i][j]
+    while True:
+        s = set()
+        for i in range(n-1):
+            if not change[i] and not change[i+1] or len(b[i]) < 2 or len(b[i+1]) < 2: continue
+            row1, row2 = b[i], b[i+1]
+            block = [[row1[0],row2[0]],['','']]
+            preCheck = False
+            if row1[0] == row2[0]:
+                preCheck = True
+            for j in range(1,min(len(row1),len(row2))):
+                block[1] = block[0]
+                block[0] = [row1[j], row2[j]]
+                if preCheck:
+                    if row1[j] == row2[j]:
+                        if row1[j] == block[1][0]:
+                            s.update([(i+1,j), (i+1,j-1), (i,j), (i,j-1)])
+                        else:
+                            if row1[j] == row2[j]:
+                                preCheck = True
+                            else:
+                                preCheck = False
+                    else:
+                        preCheck = False
+                else:
+                    if row1[j] == row2[j]:
+                        preCheck = True
+        if not bool(s): return answer
+        answer += len(s)
+        s = sorted(s, key = lambda x : x[1], reverse=True)
+        newChange = [False for _ in range(n)]
+        for e in s:
+            b[e[0]].pop(e[1])
+            newChange[e[0]] = True
+        change = newChange
+        
     
-	return answer
