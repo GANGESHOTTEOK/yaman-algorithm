@@ -26,7 +26,7 @@ def check(q1, q2):
 def solution(m, n, board):
 	answer = 0
 	global b
-	b = board
+	b = [list(x) for x in board]
 	while True:
 		s = set()
 		for j in range(n-1):
@@ -35,6 +35,6 @@ def solution(m, n, board):
 			break
 		answer += len(s)
 		for y,x in s:
-			b[y] = b[y][:x]+'X'+b[y][x+1:]
+			b[y][x] = 'X'
     
 	return answer
